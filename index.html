@@ -4,24 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome Page</title>
+    <title>Kære krop, svære krop</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
-    <div class="header">
-        <h1>Velkommen til</h1>
-        <h2>Kære krop, svære krop.</h2>
-    </div>
-    <div class="main">
-        <div class="input-group">
-            <input type="text" id="nickname" placeholder="indtast et kælenavn">
-            <a href="side2.html" id="enter" class="button-style">Enter</a>
+    <main>
+        <audio src="assets/sfx/MA_FrequentlyAskedMusic_Behind_The_Clouds_60sec.ogg" autoplay controls loop></audio>
+        <div class="hero">
+            <video id="video-velkomst" src="assets/Velkomst.mp4" autoplay loop></video>
+            <div class="vælg-krop">
+                <p id="nickname-reminder">Udfyld venligst kælenavn!</p>
+                <div class="input-group">
+                    <input type="text" id="nickname" placeholder="indtast et kælenavn">
+                    <button id="enter">Kom i gang!</button>
+                </div>
+            </div>
         </div>
-    </div>
-
-    <script src="scripts/sektion1.js"></script>
+    </main>
+    <script src="scripts/velkomst.js"></script>
 </body>
 
 </html>

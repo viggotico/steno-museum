@@ -1,3 +1,14 @@
-const user = JSON.parse(localStorage.getItem("user"));
-const nickname = document.getElementById('choose-body-nickname');
-nickname.innerHTML = user.name;
+const loading = document.getElementById('loading');
+setTimeout(() => {
+    loading.classList.add("loading-end");
+    setTimeout(() => loading.remove(), 2100);
+}, 4000);
+
+const backButton = document.getElementById('back-button');
+const nextButton = document.getElementById('next-button');
+backButton.onclick = () => {
+    window.location.href = "../";
+}
+nextButton.onclick = () => {
+    window.location.href = "../sektion3";
+}
