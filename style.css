@@ -136,7 +136,11 @@ main {
 }
 
 #video-el {
-  width: 50%;
+  width: 65%;
+}
+
+.video-el-big {
+  width: 80% !important;
 }
 
 #nickname-reminder {
@@ -178,4 +182,90 @@ main {
 .loading-end {
   opacity: 0;
   transition: 2s;
+}
+
+.sektion5-hero {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  gap: 100px;
+}
+
+.sektion5-hero div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 15%;
+  color: var(--color-5);
+  background-color: #b3c3dd;
+  padding: 50px;
+  border-radius: 15px;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.5);
+}
+
+.sektion5-hero div:hover {
+  cursor: pointer;
+  box-shadow: 2px 2px 20px var(--color-2);
+}
+
+.modificer-text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.modificer-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  gap: 100px;
+}
+
+.modificer-figur {
+  position: relative;
+  filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.3));
+}
+
+.tattoo_overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#modificer-elementer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  gap: 35px;
+  max-width: 400px;
+}
+
+#modificer-elementer img {
+  max-width: 100px;
+  max-height: 100px;
+  animation-name: tattoIn;
+  animation-duration: 0.5s;
+  filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.3));
+}
+
+#modificer-elementer img:hover {
+  cursor: pointer;
+  filter: invert(1) drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.3));
+}
+
+@keyframes tattoIn {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
 }
