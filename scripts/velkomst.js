@@ -7,7 +7,7 @@ enterButton.addEventListener('click', (e) => {
         nicknameReminder.style.display = "block";
         return;
     }
-    window.location.href = '/start';
+    window.location.href = '/steno-museet/start/index.html';
     localStorage.setItem("user", JSON.stringify({
         name: nickname.value
     }));

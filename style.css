@@ -135,7 +135,7 @@ main {
   filter: drop-shadow(2px 2px 20px var(--color-3));
 }
 
-#video-velkomst {
+#video-el {
   width: 50%;
 }
 

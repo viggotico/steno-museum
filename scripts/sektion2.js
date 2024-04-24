@@ -7,8 +7,8 @@ setTimeout(() => {
 const backButton = document.getElementById('back-button');
 const nextButton = document.getElementById('next-button');
 backButton.onclick = () => {
-    window.location.href = "../";
+    window.location.href = "../index.html";
 }
 nextButton.onclick = () => {
-    window.location.href = "../sektion3";
+    window.location.href = "../sektion3/index.html";
 }
