@@ -136,11 +136,11 @@ main {
 }
 
 #video-el {
-  width: 65%;
+  width: 60%;
 }
 
 .video-el-big {
-  width: 80% !important;
+  width: 68% !important;
 }
 
 #nickname-reminder {
